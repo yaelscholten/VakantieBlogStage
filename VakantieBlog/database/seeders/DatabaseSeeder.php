@@ -1,20 +1,15 @@
 <?php
 
+use Database\Seeders\PostsSeeder;
+use Database\Seeders\UsersSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-    //  * Run the database seeds.
-    //  *
-    //  * @return void
-    //  */
+
     public function run()
     {
-        // Eloquent::unguard();
-        // $this->call([
-        //     UsersTablesSeeder::class,
-        // ]);
+        $this->call(PostsSeeder::class);
     }
 }
